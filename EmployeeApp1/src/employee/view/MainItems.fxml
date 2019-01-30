@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employee.view.MainItemsController">
+   <left>
+      <FlowPane hgap="20.0" prefHeight="200.0" prefWidth="200.0" vgap="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#goToAcctDept" prefHeight="40.0" prefWidth="80.0" text="Acct Dept" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#goToHrDept" prefHeight="40.0" prefWidth="80.0" text="HR Dept" />
+         </children>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </FlowPane>
+   </left>
+</BorderPane>

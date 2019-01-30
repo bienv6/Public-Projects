@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="security.home.HomeScreenControlla.java">
+   <children>
+      <Pane prefHeight="57.0" prefWidth="614.0" style="-fx-background-color: #cc0000;">
+         <children>
+            <ImageView fitHeight="57.0" fitWidth="614.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../Documents/NetBeansProjects/JavaFXApplication1/src/javafxapplication1/assets/signIn_bg.jpg" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="343.0" prefHeight="57.0" prefWidth="614.0" style="-fx-background-color: #cc0000;">
+         <children>
+            <ImageView fitHeight="57.0" fitWidth="614.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../Documents/NetBeansProjects/JavaFXApplication1/src/javafxapplication1/assets/signIn_bg.jpg" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane layoutY="52.0" prefHeight="305.0" prefWidth="614.0">
+         <children>
+            <JFXTextField fx:id="fname" layoutX="32.0" layoutY="63.0" promptText="First Name" unFocusColor="#cc0000" />
+            <JFXTextField fx:id="lname" layoutX="210.0" layoutY="63.0" promptText="Last Name" unFocusColor="#cc0000" />
+            <JFXTextField fx:id="empType" layoutX="32.0" layoutY="119.0" promptText="Employee Type" unFocusColor="#cc0000" />
+            <JFXTextField fx:id="dept" layoutX="210.0" layoutY="119.0" promptText="Department" unFocusColor="#cc0000" />
+            <JFXTextField fx:id="email" layoutX="32.0" layoutY="176.0" promptText="Email" unFocusColor="#cc0000" />
+            <JFXTextField fx:id="phone" layoutX="210.0" layoutY="176.0" promptText="Phone" unFocusColor="#cc0000" />
+            <AnchorPane layoutX="379.0" layoutY="76.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="231.0" fitWidth="172.0" layoutX="27.0" layoutY="-31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Documents/NetBeansProjects/JavaFXApplication1/src/javafxapplication1/assets/banklogo.png" />
+                     </image>
+                     <effect>
+                        <Glow />
+                     </effect></ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="registerBtn" layoutX="56.0" layoutY="244.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: #ff4000;" text="REGISTER" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

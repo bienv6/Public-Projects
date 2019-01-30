@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root id="AnchorPane" fx:id="homePane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="security.home.HomeScreenControlla">
+   <children>
+      <ImageView fitHeight="438.0" fitWidth="759.0" layoutX="-95.0" layoutY="-37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Documents/NetBeansProjects/JavaFXApplication1/src/javafxapplication1/assets/signIn_bg.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="450.0" layoutY="33.0" opacity="0.8" prefHeight="335.0" prefWidth="200.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label layoutX="74.0" layoutY="29.0" opacity="0.5" text="SIGN IN" textFill="#eeeeee">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField id="uID" fx:id="username" layoutX="33.0" layoutY="78.0" promptText="Username/Email" unFocusColor="#610303" />
+            <JFXPasswordField id="pWord" fx:id="pword" layoutX="33.0" layoutY="168.0" promptText="Password" unFocusColor="#610303" />
+            <JFXButton id="login_btn" fx:id="loginBtn" layoutX="33.0" layoutY="243.0" opacity="0.5" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: #610303;" text="LOGIN" textFill="#eeeeee" />
+            <Hyperlink fx:id="forgotPw" layoutX="50.0" layoutY="288.0" text="Forgot Password?" textFill="#eeeeee" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="56.0" fitWidth="49.0" layoutX="85.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Documents/NetBeansProjects/JavaFXApplication1/src/javafxapplication1/assets/banklogo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="85.0" layoutY="77.0" opacity="0.5" prefHeight="35.0" prefWidth="35.0" text="f" textFill="#fc1408">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="33.0" layoutY="91.0" prefHeight="35.0" prefWidth="149.0" text="SECURITY    SOLUTIONS" textFill="#610303">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="76.0" prefHeight="35.0" prefWidth="115.0" text="  In   erno" textFill="#610303">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="newEmp" layoutX="205.0" layoutY="341.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="159.0" style="-fx-background-color: #610303; -fx-border-color: #000000;" text="New Account" textFill="#eeeaea" />
+   </children>
+</fx:root>
